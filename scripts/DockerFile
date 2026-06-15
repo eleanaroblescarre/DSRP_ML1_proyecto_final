@@ -1,0 +1,17 @@
+# Use an official Python runtime as a parent image
+FROM python:3.10-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy requirements first (better for caching)
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy your Python script
+COPY customer_segm.py .
+
+# Default command to run your script
+CMD ["python", "customer_segm.py"]
