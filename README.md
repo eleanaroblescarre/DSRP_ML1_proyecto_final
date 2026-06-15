@@ -56,9 +56,14 @@ Limitaciones y recomendaciones
 
 
 ## e. Resultados
-1. Se estimó que 2 clusters era lo mas optimo
+
+### Offline
+1. Se estimó que 2 clusters era lo adecuado.
 2. El modelo K-Means alcanzó un Silhouette Score de 0.78, lo que indica una buena separación entre clusters.
 
+### Online
+1. Latencia
+pendientes
 
 ## f. Conclusiones
 
